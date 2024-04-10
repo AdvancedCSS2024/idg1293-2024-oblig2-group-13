@@ -1,16 +1,92 @@
+$white: #fff;
+$grey1: #221e20;
+$grey2: #ebebeb;
+$grey3: #b5b9b9;
+$lime-green: #a3d16c;
+$yellow: #f5ed42;
+$orange: #c97262;
+$blue: #00b1dd;
+$eggshell: #fde1cf;
+$skin1: #836c5e;
+$skin2: #221e20;
+$skin3: #fde1cf;
+
 body {
     margin: 0;
     padding: 0;
     background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    gap: 10vw;
+}
+
+.stroke {
+    stroke: #221e20;
+    stroke-width: 10px;
+    stroke-miterlimit: 10;
+    fill:none
+}
+
+.stroke--white {
+    stroke: #fff;
+}
+
+.white {
+    fill: #fff;
+}
+
+.grey1 {
+    fill: $grey1;
+}
+
+.grey2 {
+    fill: $grey2;
+}
+
+.grey3 {
+    fill: $grey3;
+}
+
+.lime {
+    fill: $lime-green;
+}
+
+.yellow {
+    fill: $yellow;
+}
+
+.orange {
+    fill: $orange;
+}
+
+.blue {    
+    fill: $blue;
+}
+
+.eggshell {
+    fill: $eggshell;
+}
+
+.skin1 {
+    fill: $skin1;
+} 
+
+.skin2 {
+    fill: $skin2;
+}
+
+.skin3 {
+    fill: $skin3;
 }
 
 .container {
     position: relative;
+    clear: both;
 }
 
 .waveBlue {
     fill: #085ca9;
-    stroke-width: 0px;
+    stroke-width: 0;
 }
 
 .moon {
@@ -21,6 +97,9 @@ body {
     svg {
         width: 100%;
         height: auto;
+    }
+    .star {
+        transform-origin: 80% 70%;
     }
 }
 
@@ -34,4 +113,44 @@ body {
         width: 100%;
         height: auto;
     }
+}
+
+.earth {
+    position: absolute;
+    bottom: 0vw;
+    width: 100%;
+}
+
+.wavePink {
+    fill: #E7C3B7;
+    stroke-width: 0px;
+    bottom: 0;
+    width: 100%;
+}
+
+.person {
+    position: absolute;
+}
+
+.person1 {
+    left: 49vw;
+    width: 21vw;
+    transform: translate(-50%);
+    top: -8vw;
+}
+
+.person2 {
+    right: 16.5vw;
+    top: -9vw;
+    width: 24vw;
+}
+
+.person3 {
+    left: 12vw;
+    top: -2vw;
+    width: 24vw;
+}
+
+.t-orgin {
+    transform-origin: center;
 }
