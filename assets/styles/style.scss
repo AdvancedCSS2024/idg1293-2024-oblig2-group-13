@@ -11,13 +11,22 @@ $skin1: #836c5e;
 $skin2: #221e20;
 $skin3: #fde1cf;
 
+@font-face {
+    font-family: 'Marydale';
+    src: local('Marydale-Bold'),
+        url('../fonts/Marydale-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
 body {
     margin: 0;
     padding: 0;
     background-color: #f5f5f5;
     display: flex;
     flex-direction: column;
-    gap: 10vw;
+    gap: 27vw;
 }
 
 .stroke {
@@ -29,6 +38,10 @@ body {
 
 .stroke--white {
     stroke: #fff;
+}
+
+.stroke--5 {
+    stroke-width: 5px;
 }
 
 .white {
@@ -103,12 +116,22 @@ body {
     }
 }
 
+.font-marydale {
+    font-family: 'Marydale';
+    font-size: 3rem;
+}
+
+.font-large {
+    font-size: 6rem;
+}
+
 .car {
     position: absolute;
-    bottom: 0vw;
-    left: 50%;
+    bottom: -17vw;
+    left: 40vw;
     transform: translate(-50%);
-    width: 20vw;
+    width: 61vw;
+    animation: bobUpDown 2s ease-in-out 0s infinite alternate-reverse forwards;
     svg {
         width: 100%;
         height: auto;
@@ -126,6 +149,18 @@ body {
     stroke-width: 0px;
     bottom: 0;
     width: 100%;
+}
+
+.gass {
+    position: absolute;
+    top: -24vw;
+    transform: translate(-50%);
+    left: 50%;
+    width: 90vw;
+    & svg > g {
+        animation: moveAndFade 5s ease-in-out infinite;
+        transform-origin: 50%;
+    }
 }
 
 .person {
@@ -152,5 +187,30 @@ body {
 }
 
 .t-orgin {
-    transform-origin: center;
+    transform-origin: 50% 50%;
+}
+
+@keyframes moveAndFade {
+    0%, 100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+      25% {
+        transform: translateY(-50px);
+        opacity: 0;
+      }
+      75% {
+        transform: translateY(50px);
+        opacity: 0;
+      }
+  }
+
+@keyframes bobUpDown {
+	0% {
+		transform: translate(-50%, 0);
+	}
+
+	100% {
+		transform: translate(-50%, -1vw);
+	}
 }
