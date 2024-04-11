@@ -1,0 +1,326 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  height: 3.5vw;
+  display: flex;
+  align-items: center;
+}
+section p {
+  margin: 0;
+  font-size: 1vw;
+  padding: 0 2vw;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  background-color: #0957ad;
+  font-family: "MaryDale";
+  font-size: 1.5vw;
+  padding: 0.5vw 3vw 1.5vw 3vw;
+  justify-content: space-around;
+  color: white;
+}
+footer div {
+  display: flex;
+  align-items: center;
+  border-right: 0.25vw solid white;
+  padding: 0 1vw 0.4vw 0;
+}
+footer div:nth-child(2) {
+  font-size: 1.1vw;
+}
+footer div:last-child {
+  border: 0;
+  padding: 0;
+  font-size: 1.5vw;
+}
+footer p {
+  margin: 0;
+}
+footer img {
+  max-width: 30vw;
+}
+
+strong {
+  color: #129440;
+}
+
+.stroke {
+  stroke: #221e20;
+  stroke-width: 10px;
+  stroke-miterlimit: 10;
+  fill: none;
+}
+
+.stroke--white {
+  stroke: #fff;
+}
+
+.stroke--5 {
+  stroke-width: 5px;
+}
+
+.white {
+  fill: #fff;
+}
+
+.grey1 {
+  fill: #221e20;
+}
+
+.grey2 {
+  fill: #ebebeb;
+}
+
+.grey3 {
+  fill: #b5b9b9;
+}
+
+.lime {
+  fill: #a3d16c;
+}
+
+.yellow {
+  fill: #f5ed42;
+}
+
+.orange {
+  fill: #c97262;
+}
+
+.blue {
+  fill: #00b1dd;
+}
+
+.eggshell {
+  fill: #fde1cf;
+}
+
+.skin1 {
+  fill: #836c5e;
+}
+
+.skin2 {
+  fill: #221e20;
+}
+
+.skin3 {
+  fill: #fde1cf;
+}
+
+.bg-blue {
+  padding: 0 0 27vw 0;
+  background-color: #d9f5fb;
+  z-index: -999;
+}
+
+.waveBlue {
+  position: relative;
+  height: 40vw;
+  width: 100vw;
+  overflow: hidden;
+  z-index: 0;
+  background-color: #fff;
+  margin-top: 4vw;
+}
+
+.wave {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 70%;
+  height: 100%;
+  background: #0957ad;
+  border-radius: 100%;
+  transform: translate(40%, 0);
+}
+.wave:nth-child(2) {
+  border-radius: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #d9f5fb;
+  transform: translate(0, 50%);
+  height: 70%;
+  width: 100%;
+  z-index: -1;
+}
+.wave:nth-child(3) {
+  border-radius: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  transform: translate(0, 0);
+  height: 50%;
+  width: 100%;
+  z-index: -1;
+}
+.wave:nth-child(4) {
+  border-radius: 0;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  height: 70%;
+  width: 80%;
+}
+.wave:nth-child(5) {
+  top: 50%;
+  left: 0;
+  transform: translate(-24.7%, -109%);
+  height: 106.1%;
+  width: 100%;
+  background: #fff;
+}
+.wave:nth-child(6) {
+  bottom: 0;
+  background: #d9f5fb;
+  transform: translate(-18.8%, 59%);
+  height: 106%;
+  width: 114%;
+}
+
+.container {
+  position: relative;
+  clear: both;
+}
+.container--bottom {
+  background-color: #d9f5fb;
+}
+.container--top {
+  margin-top: 15vw;
+}
+
+.waveBlue {
+  fill: #085ca9;
+  stroke-width: 0;
+}
+
+.moon {
+  position: absolute;
+  top: 8vw;
+  right: 1vw;
+  width: 32vw;
+}
+.moon svg {
+  width: 100%;
+  height: auto;
+}
+.moon .star {
+  transform-origin: 80% 70%;
+}
+
+.text {
+  position: absolute;
+  font-weight: 700;
+  font-family: "marydale";
+  z-index: 999;
+}
+
+.font-marydale {
+  font-family: "marydale";
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.font-openSans {
+  font-family: "OpenSans";
+}
+
+.font-large {
+  font-size: 6rem;
+  line-height: 4vw;
+  color: #0957ad;
+}
+
+.car {
+  position: absolute;
+  top: 31vw;
+  left: 40vw;
+  transform: translate(-50%);
+  width: 61vw;
+  animation: bobUpDown 2s ease-in-out 0s infinite alternate-reverse forwards;
+}
+.car svg {
+  width: 100%;
+  height: auto;
+}
+
+.earth {
+  position: absolute;
+  bottom: 0vw;
+  width: 100%;
+}
+
+.wavePink {
+  fill: #E7C3B7;
+  stroke-width: 0px;
+  bottom: 0;
+  width: 100%;
+}
+
+.gass {
+  position: absolute;
+  top: -24vw;
+  transform: translate(-50%);
+  left: 50%;
+  width: 90vw;
+}
+.gass svg > g {
+  animation: moveAndFade 5s ease-in-out infinite;
+  transform-origin: 50%;
+}
+
+.person {
+  position: absolute;
+}
+
+.person1 {
+  left: 49vw;
+  width: 21vw;
+  transform: translate(-50%);
+  top: -8vw;
+}
+
+.person2 {
+  right: 16.5vw;
+  top: -9vw;
+  width: 24vw;
+}
+
+.person3 {
+  left: 12vw;
+  top: -2vw;
+  width: 24vw;
+}
+
+.t-orgin {
+  transform-origin: 50% 50%;
+}
+
+@keyframes moveAndFade {
+  0%, 100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  25% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  75% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+}
+@keyframes bobUpDown {
+  0% {
+    transform: translate(-50%, 0);
+  }
+  100% {
+    transform: translate(-50%, -1vw);
+  }
+}
