@@ -19,6 +19,52 @@ body {
   flex-direction: column;
 }
 
+section {
+  height: 3.5vw;
+  display: flex;
+  align-items: center;
+}
+section p {
+  margin: 0;
+  font-size: 1vw;
+  padding: 0 2vw;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  background-color: #0957ad;
+  font-family: "MaryDale";
+  font-size: 1.5vw;
+  padding: 0.5vw 3vw 1.5vw 3vw;
+  justify-content: space-around;
+  color: white;
+}
+footer div {
+  display: flex;
+  align-items: center;
+  border-right: 0.25vw solid white;
+  padding: 0 1vw 0.4vw 0;
+}
+footer div:nth-child(2) {
+  font-size: 1.1vw;
+}
+footer div:last-child {
+  border: 0;
+  padding: 0;
+  font-size: 1.5vw;
+}
+footer p {
+  margin: 0;
+}
+footer img {
+  max-width: 30vw;
+}
+
+strong {
+  color: #129440;
+}
+
 .stroke {
   stroke: #221e20;
   stroke-width: 10px;
@@ -95,6 +141,7 @@ body {
   overflow: hidden;
   z-index: 0;
   background-color: #fff;
+  margin-top: 4vw;
 }
 
 .wave {
@@ -169,8 +216,8 @@ body {
 
 .moon {
   position: absolute;
-  top: 5vw;
-  right: 2vw;
+  top: 8vw;
+  right: 1vw;
   width: 32vw;
 }
 .moon svg {
@@ -189,17 +236,19 @@ body {
 .text {
   position: absolute;
   font-family: "Marydale";
+  z-index: 999;
 }
 
 .font-large {
   font-size: 6rem;
   font-family: "OpenSans";
   line-height: 4vw;
+  color: #0957ad;
 }
 
 .car {
   position: absolute;
-  top: 28vw;
+  top: 31vw;
   left: 40vw;
   transform: translate(-50%);
   width: 61vw;

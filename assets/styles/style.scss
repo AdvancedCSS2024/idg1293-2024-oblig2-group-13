@@ -3,6 +3,7 @@ $grey1: #221e20;
 $grey2: #ebebeb;
 $grey3: #b5b9b9;
 $lime-green: #a3d16c;
+$dark-green: #129440;
 $yellow: #f5ed42;
 $orange: #c97262;
 $blue: #00b1dd;
@@ -34,7 +35,68 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
+
 }
+
+section {
+    height: 3.5vw;
+    display: flex;
+align-items: center;
+    p {
+        margin: 0;
+        font-size: 1vw;
+        padding: 0 2vw;
+    }
+}
+
+footer {
+
+    // padding: 10vw;
+    display: flex;
+    align-items: center;
+    background-color: $dark-blue;
+    font-family: 'MaryDale';
+    font-size: 1.5vw;
+    padding: 0.5vw 3vw 1.5vw 3vw;
+
+
+    justify-content: space-around;
+    color: white;
+    
+    div {
+        display: flex;
+        align-items: center;
+        border-right: 0.25vw solid white;
+        padding: 0 1vw 0.4vw 0;
+        
+        &:nth-child(2) {
+            font-size: 1.1vw;
+        }
+
+        &:last-child {
+            border: 0;
+            padding: 0;
+            font-size: 1.5vw;
+        }
+       
+    }
+    
+    
+    p {
+        margin: 0;
+    }
+
+    img {
+        max-width: 30vw;
+    }
+
+}
+
+
+strong {
+    color: $dark-green; 
+}
+
 
 .stroke {
     stroke: #221e20;
@@ -112,6 +174,7 @@ body {
     overflow: hidden;
     z-index: 0;
     background-color: #fff;
+    margin-top: 4vw;
 }
 
 .wave {
@@ -189,8 +252,8 @@ body {
 
 .moon {
     position: absolute;
-    top: 5vw;
-    right: 2vw;
+    top: 8vw;
+    right: 1vw;
     width: 32vw;
 
     svg {
@@ -211,17 +274,20 @@ body {
 .text {
     position: absolute;
     font-family: 'Marydale';
+    z-index: 999;
+
 }
 
 .font-large {
     font-size: 6rem;
     font-family: 'OpenSans';
     line-height: 4vw;
+    color: $dark-blue;
 }
 
 .car {
     position: absolute;
-    top: 28vw;
+    top: 31vw;
     left: 40vw;
     transform: translate(-50%);
     width: 61vw;
