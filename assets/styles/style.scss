@@ -6,6 +6,7 @@ $lime-green: #a3d16c;
 $yellow: #f5ed42;
 $orange: #c97262;
 $blue: #00b1dd;
+$dark-blue: #0957ad;
 $eggshell: #fde1cf;
 $skin1: #836c5e;
 $skin2: #221e20;
@@ -31,17 +32,15 @@ $skin3: #fde1cf;
 body {
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
     display: flex;
     flex-direction: column;
-    gap: 27vw;
 }
 
 .stroke {
     stroke: #221e20;
     stroke-width: 10px;
     stroke-miterlimit: 10;
-    fill:none
+    fill: none
 }
 
 .stroke--white {
@@ -80,7 +79,7 @@ body {
     fill: $orange;
 }
 
-.blue {    
+.blue {
     fill: $blue;
 }
 
@@ -90,7 +89,7 @@ body {
 
 .skin1 {
     fill: $skin1;
-} 
+}
 
 .skin2 {
     fill: $skin2;
@@ -100,9 +99,87 @@ body {
     fill: $skin3;
 }
 
+.bg-blue {
+    padding: 0 0 27vw 0;
+    background-color: #d9f5fb;
+    z-index: -999;
+}
+
+.waveBlue {
+    position: relative;
+    height: 40vw;
+    width: 100vw;
+    overflow: hidden;
+    z-index: 0;
+    background-color: #fff;
+}
+
+.wave {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 100%;
+    background: #0957ad;
+    border-radius: 100%;
+    transform: translate(40%, 0);
+    &:nth-child(2) {
+        border-radius: 0;
+        bottom: 0;
+        left: 0;
+        background-color: #d9f5fb;
+        transform: translate(0, 50%);
+        height: 70%;
+        width: 100%;
+        z-index: -1;
+    }
+    &:nth-child(3) {
+        border-radius: 0;
+        bottom: 0;
+        left: 0;
+        background-color: #fff;
+        transform: translate(0, 0);
+        height: 50%;
+        width: 100%;
+        z-index: -1;
+    }
+    &:nth-child(4) {
+        border-radius: 0;
+        top: 50%;
+        left: 0;
+        transform: translate(0, -50%);
+        height: 70%;
+        width: 80%;
+    }
+
+    &:nth-child(5) {
+        top: 50%;
+        left: 0;
+        transform: translate(-24.7%, -109%);
+        height: 106.1%;
+        width: 100%;
+        background: #fff;
+    }
+
+    &:nth-child(6) {
+        bottom: 0;
+        background: #d9f5fb;
+        transform: translate(-18.8%, 59%);
+        height: 106%;
+        width: 114%;
+    }
+}
+
 .container {
     position: relative;
     clear: both;
+    &--bottom {
+        background-color: #d9f5fb;
+    }
+
+    &--top {
+        margin-top: 15vw;
+    }
 }
 
 .waveBlue {
@@ -113,12 +190,14 @@ body {
 .moon {
     position: absolute;
     top: 5vw;
-    right: 5vw;
+    right: 2vw;
     width: 32vw;
+
     svg {
         width: 100%;
         height: auto;
     }
+
     .star {
         transform-origin: 80% 70%;
     }
@@ -142,11 +221,12 @@ body {
 
 .car {
     position: absolute;
-    bottom: -17vw;
+    top: 28vw;
     left: 40vw;
     transform: translate(-50%);
     width: 61vw;
     animation: bobUpDown 2s ease-in-out 0s infinite alternate-reverse forwards;
+
     svg {
         width: 100%;
         height: auto;
@@ -172,7 +252,8 @@ body {
     transform: translate(-50%);
     left: 50%;
     width: 90vw;
-    & svg > g {
+
+    & svg>g {
         animation: moveAndFade 5s ease-in-out infinite;
         transform-origin: 50%;
     }
@@ -206,26 +287,30 @@ body {
 }
 
 @keyframes moveAndFade {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0);
         opacity: 1;
-      }
-      25% {
-        transform: translateY(-50px);
+    }
+
+    25% {
+        transform: translateY(-20px);
         opacity: 0;
-      }
-      75% {
+    }
+
+    75% {
         transform: translateY(50px);
         opacity: 0;
-      }
-  }
+    }
+}
 
 @keyframes bobUpDown {
-	0% {
-		transform: translate(-50%, 0);
-	}
+    0% {
+        transform: translate(-50%, 0);
+    }
 
-	100% {
-		transform: translate(-50%, -1vw);
-	}
+    100% {
+        transform: translate(-50%, -1vw);
+    }
 }

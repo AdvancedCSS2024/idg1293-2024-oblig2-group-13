@@ -15,10 +15,8 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #f5f5f5;
   display: flex;
   flex-direction: column;
-  gap: 27vw;
 }
 
 .stroke {
@@ -84,9 +82,84 @@ body {
   fill: #fde1cf;
 }
 
+.bg-blue {
+  padding: 0 0 27vw 0;
+  background-color: #d9f5fb;
+  z-index: -999;
+}
+
+.waveBlue {
+  position: relative;
+  height: 40vw;
+  width: 100vw;
+  overflow: hidden;
+  z-index: 0;
+  background-color: #fff;
+}
+
+.wave {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 70%;
+  height: 100%;
+  background: #0957ad;
+  border-radius: 100%;
+  transform: translate(40%, 0);
+}
+.wave:nth-child(2) {
+  border-radius: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #d9f5fb;
+  transform: translate(0, 50%);
+  height: 70%;
+  width: 100%;
+  z-index: -1;
+}
+.wave:nth-child(3) {
+  border-radius: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  transform: translate(0, 0);
+  height: 50%;
+  width: 100%;
+  z-index: -1;
+}
+.wave:nth-child(4) {
+  border-radius: 0;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  height: 70%;
+  width: 80%;
+}
+.wave:nth-child(5) {
+  top: 50%;
+  left: 0;
+  transform: translate(-24.7%, -109%);
+  height: 106.1%;
+  width: 100%;
+  background: #fff;
+}
+.wave:nth-child(6) {
+  bottom: 0;
+  background: #d9f5fb;
+  transform: translate(-18.8%, 59%);
+  height: 106%;
+  width: 114%;
+}
+
 .container {
   position: relative;
   clear: both;
+}
+.container--bottom {
+  background-color: #d9f5fb;
+}
+.container--top {
+  margin-top: 15vw;
 }
 
 .waveBlue {
@@ -97,7 +170,7 @@ body {
 .moon {
   position: absolute;
   top: 5vw;
-  right: 5vw;
+  right: 2vw;
   width: 32vw;
 }
 .moon svg {
@@ -126,7 +199,7 @@ body {
 
 .car {
   position: absolute;
-  bottom: -17vw;
+  top: 28vw;
   left: 40vw;
   transform: translate(-50%);
   width: 61vw;
@@ -195,7 +268,7 @@ body {
     opacity: 1;
   }
   25% {
-    transform: translateY(-50px);
+    transform: translateY(-20px);
     opacity: 0;
   }
   75% {
