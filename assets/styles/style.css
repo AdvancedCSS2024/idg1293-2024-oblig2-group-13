@@ -5,6 +5,13 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "OpenSans";
+  src: local("OpenSans-Bold"), url("../fonts/OpenSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: bold;
+  font-display: swap;
+}
 body {
   margin: 0;
   padding: 0;
@@ -186,6 +193,8 @@ body {
 
 .font-large {
   font-size: 6rem;
+  font-family: "OpenSans";
+  line-height: 4vw;
 }
 
 .car {
@@ -274,4 +283,4 @@ body {
   100% {
     transform: translate(-50%, -1vw);
   }
-}
+}/*# sourceMappingURL=style.css.map */
