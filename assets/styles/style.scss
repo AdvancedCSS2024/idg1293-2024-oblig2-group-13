@@ -266,11 +266,6 @@ strong {
     }
 }
 
-.font-marydale {
-    font-family: 'Marydale';
-    font-size: 3rem;
-}
-
 .text {
     position: absolute;
     font-family: 'Marydale';
@@ -278,9 +273,17 @@ strong {
 
 }
 
+.font-marydale {
+    font-family: 'Marydale';
+    font-size: 3rem;
+}
+
+.font-openSans {
+    font-family: 'OpenSans';
+}
+
 .font-large {
     font-size: 6rem;
-    font-family: 'OpenSans';
     line-height: 4vw;
     color: $dark-blue;
 }

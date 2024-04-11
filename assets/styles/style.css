@@ -228,20 +228,23 @@ strong {
   transform-origin: 80% 70%;
 }
 
-.font-marydale {
-  font-family: "Marydale";
-  font-size: 3rem;
-}
-
 .text {
   position: absolute;
   font-family: "Marydale";
   z-index: 999;
 }
 
+.font-marydale {
+  font-family: "Marydale";
+  font-size: 3rem;
+}
+
+.font-openSans {
+  font-family: "OpenSans";
+}
+
 .font-large {
   font-size: 6rem;
-  font-family: "OpenSans";
   line-height: 4vw;
   color: #0957ad;
 }
@@ -332,4 +335,4 @@ strong {
   100% {
     transform: translate(-50%, -1vw);
   }
-}/*# sourceMappingURL=style.css.map */
+}
