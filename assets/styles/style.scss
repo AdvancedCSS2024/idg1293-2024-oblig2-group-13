@@ -13,35 +13,18 @@ $skin1: #836c5e;
 $skin2: #221e20;
 $skin3: #fde1cf;
 
-@font-face {
-    font-family: 'Marydale';
-    src: local('Marydale-Bold'),
-        url('../fonts/Marydale-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'OpenSans';
-    src: local('OpenSans-Bold'),
-        url('../fonts/OpenSans-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: bold;
-    font-display: swap;
-}
-
 body {
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
-
 }
 
 section {
     height: 3.5vw;
     display: flex;
-align-items: center;
+    align-items: center;
+
     p {
         margin: 0;
         font-size: 1vw;
@@ -50,8 +33,6 @@ align-items: center;
 }
 
 footer {
-
-    // padding: 10vw;
     display: flex;
     align-items: center;
     background-color: $dark-blue;
@@ -62,13 +43,13 @@ footer {
 
     justify-content: space-around;
     color: white;
-    
+
     div {
         display: flex;
         align-items: center;
         border-right: 0.25vw solid white;
         padding: 0 1vw 0.4vw 0;
-        
+
         &:nth-child(2) {
             font-size: 1.1vw;
         }
@@ -78,10 +59,9 @@ footer {
             padding: 0;
             font-size: 1.5vw;
         }
-       
+
     }
-    
-    
+
     p {
         margin: 0;
     }
@@ -92,11 +72,9 @@ footer {
 
 }
 
-
 strong {
-    color: $dark-green; 
+    color: $dark-green;
 }
-
 
 .stroke {
     stroke: #221e20;
@@ -186,6 +164,7 @@ strong {
     background: #0957ad;
     border-radius: 100%;
     transform: translate(40%, 0);
+
     &:nth-child(2) {
         border-radius: 0;
         bottom: 0;
@@ -196,6 +175,7 @@ strong {
         width: 100%;
         z-index: -1;
     }
+
     &:nth-child(3) {
         border-radius: 0;
         bottom: 0;
@@ -206,6 +186,7 @@ strong {
         width: 100%;
         z-index: -1;
     }
+
     &:nth-child(4) {
         border-radius: 0;
         top: 50%;
@@ -236,6 +217,7 @@ strong {
 .container {
     position: relative;
     clear: both;
+
     &--bottom {
         background-color: #d9f5fb;
     }
@@ -268,13 +250,15 @@ strong {
 
 .text {
     position: absolute;
-    font-family: 'Marydale';
+    font-weight: 700;
+    font-family: 'marydale';
     z-index: 999;
 
 }
 
 .font-marydale {
-    font-family: 'Marydale';
+    font-family: 'marydale';
+    font-weight: 700;
     font-size: 3rem;
 }
 
